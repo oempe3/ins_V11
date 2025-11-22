@@ -171,6 +171,7 @@ function updateCompletionStatus() {
 
 /**
  * Cria o HTML para um único campo de formulário com base na sua configuraç
+
 function createFieldHTML(fieldConfig, currentValue) {
     const fieldId = `${currentWindowId}-${fieldConfig.name}`;
     const value = currentValue !== undefined && currentValue !== null ? currentValue : (fieldConfig.default || '');
@@ -330,6 +331,7 @@ function createFieldHTML(fieldConfig, currentValue) {
         </div>
     `;
 }
+
      ${indicatorHTML}
                 ${labelText}
                 ${unitHTML}
